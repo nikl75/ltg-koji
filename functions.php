@@ -138,10 +138,16 @@ if ( ! function_exists( 'koji_enqueue_scripts' ) ) :
 			'ajaxurl'   => esc_url( $ajax_url ),
 		) );
 
+
+		// ltg mastered: swiper slider
+		wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/swiper/swiper.min.js', array ( 'jquery' ), null , true);
+		wp_enqueue_script( 'ltg-call-swiper', get_template_directory_uri() . '/assets/swiper/ltg_swiper-call.js', array ( 'swiper' ), 1.1, true);
+		wp_enqueue_style(  'swiper-style', get_template_directory_uri() . '/assets/swiper/ltg_swiper.css','',null,null);
 	}
 	add_action( 'wp_enqueue_scripts', 'koji_enqueue_scripts' );
 
 endif;
+
 
 
 /* ---------------------------------------------------------------------------------------------
