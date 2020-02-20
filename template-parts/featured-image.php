@@ -14,7 +14,7 @@ if (!get_field('holzh_beitragsbild_verbergen', $post->ID)) {
 						<div class="swiper-container swiper-featured-galerie featured-hero default"  role="banner">
 				    		<div class="swiper-wrapper">';
 			foreach ($tHeaders as $tHeader) {
-				echo '		<div class="swiper-slide header-slide" style="background:url(' . $tHeader['url'] . ')"></div>';
+				echo '		<div class="swiper-slide header-slide" style="background:url(' . $tHeader['url'] . ') no-repeat center center; background-size: cover;"></div>';
 			}
 			echo '    	</div>';
 			echo '		<div class="swiper-pagination"></div>';

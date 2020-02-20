@@ -9,7 +9,10 @@ $(document).ready(function () {
             slidesPerGroup:1,
             speed:2000,
             effect:'fade',
-           pagination: {
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
                el: '.swiper-pagination',
                clickable: true,
             },
